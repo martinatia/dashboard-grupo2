@@ -2,37 +2,22 @@ import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 
 function ContentRowMovies(props) {
-  //transformar a statefull con hooks
-  //la props solo debe recibir la api
+
   const [loading, setLoading] = useState(true);
-  // const [endPoint, setEndPoint] = useState(props.api);
+
 
   let [valoresTraidos, setValoresTraidos] = useState([]);
-  console.log("el tipo de dato de props api es:", typeof(props.api));
-  console.log("dentro del contentrowmovies la props api tiene:", props.api);
-
-  // const data = props.api.meta.total;
-  // let cifra;
-  // if(data){
-  //   cifra = data
-  // }else{
-  //   cifra = "Cargando"
-  // }
 
   useEffect(() => {
     //componentDidMount
-    console.log("Component did mount");
   }, []);
 
   useEffect(async() =>  {
     let fetchData = async () => {
       try {
-        let response = fetch(props.api);
-        // if (!response.ok) {
-        //   throw new Error('Network response was not ok');
-        // }
+        let response = await fetch(props.api);
         const data = await response.json();
-        setValoresTraidos(data.data);
+        setValoresTraidos(data);
         setLoading(false);
       } catch (error) {
         throw error;
@@ -50,7 +35,8 @@ function ContentRowMovies(props) {
           <div className="row no-gutters align-items-center">
             <div className="col mr-2">
               <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                {loading ? "...Cargando" : "algo traido"}
+                {loading ? "...Cargando" : props.titulo + " en base de datos " + valoresTraidos.meta.total}
+                
               </div>
               <div className="h5 mb-0 font-weight-bold text-gray-800"></div>
             </div>

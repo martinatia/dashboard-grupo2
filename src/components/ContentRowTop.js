@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentRowMovies from './ContentRowMovies';
-import LastMovieInDb from './LastMovieInDb';
-import GenresInDb from './GenresInDb';
+import ContentRowMovies from './ContentRowTablas';
+import LastMovieInDb from './LastUserInDb';
+import GenresInDb from './CategoriesInDb';
 import Tabla from './Tabla';
 function ContentRowTop(){
     return(
@@ -14,9 +14,9 @@ function ContentRowTop(){
 				
 					{/*<!-- Content Row Movies-->*/}
 					<div className="row">
-							<ContentRowMovies titulo= "Movies in Data Base" cifra="21" api="http://localhost:3001/api/products" icono= "fas fa-film fa-2x" color="border-left-primary"/>
-							<ContentRowMovies titulo= "Total awards" cifra="79" api="http://localhost:3001/api/users"icono="fas fa-award fa-2x" color="border-left-success"/>
-							<ContentRowMovies titulo= "Actors quantity" cifra="49" api="http://localhost:3001/api/categories"icono="fas fa-user fa-2x" color="border-left-warning"/>
+							<ContentRowMovies titulo= "Productos" cifra="21" api="http://localhost:3001/api/products" icono= "fas fa-film fa-2x" color="border-left-primary"/>
+							<ContentRowMovies titulo= "Usuarios" cifra="79" api="http://localhost:3001/api/users"icono="fas fa-award fa-2x" color="border-left-success"/>
+							<ContentRowMovies titulo= "Categorias" cifra="49" api="http://localhost:3001/api/categories"icono="fas fa-user fa-2x" color="border-left-warning"/>
 					</div>
 					{/*<!-- End movies in Data Base -->*/}
 					
@@ -31,9 +31,9 @@ function ContentRowTop(){
 						
 					</div>
 
-					<div className='row'>
+					{/* <div className='row'>
 						<Tabla/>
-					</div>
+					</div> */}
 					
 				</div>
 				{/*<!--End Content Row Top-->*/}
