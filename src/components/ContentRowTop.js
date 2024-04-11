@@ -14,9 +14,9 @@ function ContentRowTop(){
 				
 					{/*<!-- Content Row Movies-->*/}
 					<div className="row">
-							<ContentRowMovies titulo= "Productos" cifra="21" api="http://localhost:3001/api/products" icono= "fas fa-film fa-2x" color="border-left-primary"/>
-							<ContentRowMovies titulo= "Usuarios" cifra="79" api="http://localhost:3001/api/users"icono="fas fa-award fa-2x" color="border-left-success"/>
-							<ContentRowMovies titulo= "Categorias" cifra="49" api="http://localhost:3001/api/categories"icono="fas fa-user fa-2x" color="border-left-warning"/>
+							<ContentRowMovies titulo= "Productos" api="http://localhost:3001/api/products" icono= "fas fa-shoe-prints fa-2x" color="border-left-primary"/>
+							<ContentRowMovies titulo= "Usuarios"  api="http://localhost:3001/api/users"icono="fas fa-user fa-2x" color="border-left-success"/>
+							<ContentRowMovies titulo= "Categorias" api="http://localhost:3001/api/categories"icono="fas fa-list fa-2x" color="border-left-warning"/>
 					</div>
 					{/*<!-- End movies in Data Base -->*/}
 					

@@ -6,7 +6,16 @@ function Footer(){
 			<footer className="sticky-footer bg-white">
 				<div className="container my-auto">
 					<div className="copyright text-center my-auto">
-						<span>Copyright &copy; Dashboard 2021</span>
+						<span>Copyright 2024&copy; Atia - Capilla - Lodi - Tenaglia - Rodriguez</span>
+					</div>
+
+					<div className="copyright text-center my-auto">
+						<span>Digital House</span>
+
+					</div>
+					
+					<div className="copyright text-center my-auto">
+						<span>Full Stack Node a Distancia SDE 04</span>
 					</div>
 				</div>
 			</footer>
